@@ -1,0 +1,47 @@
+[
+  {
+    "orderId": "AMUL-STG-891024",
+    "dispatchCode": "CND-4C-ANAND01",
+    "custName": "Dr. R. K. Patel (GCMMF HQ)",
+    "custAddress": "Amul Dairy Road, Anand - 388001, Gujarat",
+    "packName": "Limited Vault Box (24 Cans)",
+    "packPrice": 399,
+    "customFormulaName": "Amul × Sting Silken Reserve: Anabolic Silk Edition",
+    "customFormulaId": "AMUL-AI-002",
+    "placedAt": "2026-10-08T17:14:28.705Z",
+    "status": "OUT_FOR_DELIVERY",
+    "coldChainTemp": "3.8 °C Verified",
+    "carrier": "Amul Anand Reefer Express Fleet #14",
+    "estimatedDeliveryHours": 4
+  },
+  {
+    "orderId": "AMUL-STG-742918",
+    "dispatchCode": "CND-4C-MUM892",
+    "custName": "Aarav Sharma",
+    "custAddress": "Hill Road, Bandra West, Mumbai - 400050",
+    "packName": "Collector's 6-Pack Box",
+    "packPrice": 110,
+    "customFormulaName": "Amul × Sting HyperDrive: Neon Byte Edition",
+    "customFormulaId": "AMUL-AI-001",
+    "placedAt": "2026-10-08T16:50:28.705Z",
+    "status": "EN_ROUTE_REEFER",
+    "coldChainTemp": "3.9 °C Verified",
+    "carrier": "Amul Western Cold-Corridor Logistics",
+    "estimatedDeliveryHours": 12
+  },
+  {
+    "orderId": "AMUL-STG-639105",
+    "dispatchCode": "CND-4C-BLR331",
+    "custName": "Priya Iyer",
+    "custAddress": "100ft Road, Indiranagar, Bengaluru - 560038",
+    "packName": "Single 120ml Can",
+    "packPrice": 20,
+    "customFormulaName": "Amul × Sting Rose (Standard Blend)",
+    "customFormulaId": null,
+    "placedAt": "2026-10-08T16:07:28.705Z",
+    "status": "DISPATCH_CONFIRMED",
+    "coldChainTemp": "3.7 °C Verified",
+    "carrier": "Amul South Cold-Chain Transit",
+    "estimatedDeliveryHours": 24
+  }
+]

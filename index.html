@@ -1,0 +1,1045 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AMUL × STING ROSE | The Taste of India Meets Electrifying Energy</title>
+  <meta name="description" content="Experience the revolutionary Amul × Sting Rose Energy Drink in a 360° scroll-driven 3D sensory cinematic journey. 100% pure Amul dairy silk meets electrifying vitality.">
+  
+  <!-- Modern Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+  
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <!-- Preloader Screen -->
+  <div id="preloader" class="preloader">
+    <div class="preloader-content">
+      <div class="preloader-logo-wrap">
+        <span class="badge-mini">AMUL DAIRY × STING INNOVATION</span>
+        <h1 class="preloader-title">AMUL <span class="accent-text">×</span> STING</h1>
+        <p class="preloader-sub">THE TASTE OF INDIA MEETS VELVET ENERGY</p>
+      </div>
+      
+      <div class="progress-container">
+        <div class="progress-bar-track">
+          <div id="progress-bar-fill" class="progress-bar-fill"></div>
+        </div>
+        <div class="progress-info">
+          <span id="progress-status" class="progress-status">Harmonizing Pure Amul Dairy Milk...</span>
+          <span id="progress-number" class="progress-number">0%</span>
+        </div>
+      </div>
+      
+      <div class="preloader-specs">
+        <span>100% PURE AMUL DAIRY</span>
+        <span class="dot-separator">•</span>
+        <span>REAL DAMASK ROSE</span>
+        <span class="dot-separator">•</span>
+        <span>72MG VITAL CAFFEINE</span>
+        <span class="dot-separator">•</span>
+        <span>ANAND COLD-CHAIN</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sound Toggle & Frame Floating HUD -->
+  <aside class="floating-hud" aria-label="Experience Controls">
+    <button id="sound-toggle" class="hud-btn" title="Toggle Sound FX" aria-label="Toggle Sound">
+      <svg id="sound-icon-on" class="hud-icon hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+        <path d="M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+        <path d="M19.07 4.93a10 10 0 0 1 0 14.14"></path>
+      </svg>
+      <svg id="sound-icon-off" class="hud-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+        <line x1="23" y1="9" x2="17" y2="15"></line>
+        <line x1="17" y1="9" x2="23" y2="15"></line>
+      </svg>
+      <span class="hud-text" id="sound-label">AUDIO OFF</span>
+    </button>
+    <div class="hud-frame-pill">
+      <span class="pulse-indicator"></span>
+      <span id="hud-frame-text">FRAME 001 / 300</span>
+    </div>
+  </aside>
+
+  <!-- Executive Corporate Presentation Banner for Amul GCMMF -->
+  <div class="corporate-pitch-banner">
+    <div class="pitch-banner-inner">
+      <div class="pitch-badge-left">
+        <span class="coop-flag">🇮🇳</span>
+        <span class="pitch-tag-bold">GCMMF COOPERATIVE INNOVATION SHOWCASE 2026</span>
+        <span class="dot-separator">•</span>
+        <span>THE TASTE OF INDIA MEETS VELVET ENERGY</span>
+      </div>
+      <div class="pitch-badge-right">
+        <span>100% AMUL ANAND TONED MILK</span>
+        <span class="dot-separator">•</span>
+        <span>72MG VITAL CAFFEINE</span>
+        <span class="dot-separator">•</span>
+        <span>4°C COLD-CHAIN MONITORED</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sticky Luxury Navigation -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#" class="nav-brand">
+        <div class="brand-crest">
+          <span class="amul-tag">AMUL</span>
+          <span class="cross">×</span>
+          <span class="sting-tag">STING</span>
+        </div>
+        <span class="flavour-tag">ROSE VELVET MILK ENERGY</span>
+      </a>
+
+      <nav class="nav-links">
+        <a href="#scroll-experience" class="nav-link active">3D Journey</a>
+        <a href="#ai-lab" class="nav-link ai-nav-highlight">✦ AI Taste Lab</a>
+        <a href="#flavor-matrix" class="nav-link">Amul Flavours</a>
+        <a href="#specs-section" class="nav-link">Pure Nutrition</a>
+        <a href="#coldchain-live" class="nav-link">Live Telemetry</a>
+        <a href="#dairy-heritage" class="nav-link">Amul Heritage</a>
+        <a href="#order-section" class="nav-link">Order Fresh</a>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- Live Orders Ledger Toggle Button in Nav -->
+        <button type="button" id="btn-open-orders-nav" class="nav-orders-btn" title="Open Real-Time Cold-Chain Order Ledger">
+          <span class="orders-nav-icon">📦</span>
+          <span class="orders-nav-txt">Orders</span>
+          <span class="orders-count-badge" id="nav-orders-badge">3</span>
+        </button>
+
+        <div class="backend-status-pill" id="backend-status-pill" title="Amul × Sting Neural Backend Online">
+          <span class="status-pulse"></span>
+          <span class="status-text" id="status-text">AI SERVER ONLINE</span>
+        </div>
+        <div class="veg-badge-pill" title="100% Pure Vegetarian Certified">
+          <span class="veg-symbol"><span class="veg-dot"></span></span>
+          <span class="veg-text">100% VEG</span>
+        </div>
+        <a href="#order-section" class="btn btn-primary btn-sm">
+          <span>Order Now</span>
+          <svg class="btn-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Experience Wrapper -->
+  <main>
+    <!-- SCROLL-DRIVEN 3D ANIMATION HERO SECTION -->
+    <section id="scroll-experience" class="scroll-experience-section">
+      <!-- Tall Scroll Track (600vh) for butter-smooth sequence scrub -->
+      <div class="scroll-track" id="scroll-track">
+        
+        <!-- Sticky Canvas Viewport (100vh) -->
+        <div class="canvas-sticky-wrapper" id="canvas-sticky">
+          
+          <!-- Ambient glowing orbs & depth lighting -->
+          <div class="ambient-glow glow-1"></div>
+          <div class="ambient-glow glow-2"></div>
+          <div class="ambient-glow glow-3"></div>
+          
+          <!-- 3D Frame Render Canvas -->
+          <canvas id="hero-canvas" class="hero-canvas"></canvas>
+
+          <!-- Interactive Dynamic Overlays (Phased along scroll) -->
+          <div class="overlay-container" id="overlay-container">
+            
+            <!-- Phase 1: Intro (Frames 0 - 55) -->
+            <div class="story-phase phase-intro active" id="phase-1">
+              <div class="hero-flank-grid">
+                <div class="glass-card hero-flank-card hero-flank-left">
+                  <div class="pill-badge">
+                    <span class="sparkle">✦</span> AMUL DAIRY × STING
+                  </div>
+                  <h1 class="hero-brand-title">
+                    VELVET<br><span class="accent-text">BLOOM.</span>
+                  </h1>
+                  <p class="hero-brand-desc">
+                    Where ferocious electro-caffeine vitality collides with authentic chilled Damask rose milk from Amul Anand.
+                  </p>
+                  <div class="hero-mini-stats">
+                    <span class="mini-spec-pill"><strong>120ml</strong> CHILLED CAN</span>
+                    <span class="mini-spec-pill"><strong>72mg</strong> CAFFEINE</span>
+                    <span class="mini-spec-pill"><strong>100%</strong> AMUL MILK</span>
+                  </div>
+                </div>
+
+                <div class="glass-card hero-flank-card hero-flank-right">
+                  <span class="card-tag">360° SENSORY KINETICS</span>
+                  <h2 class="card-title">SCROLL TO<br>UNLEASH</h2>
+                  <p class="card-desc">
+                    Accelerate fluid splash ribbons and glide across all 300 orbital frames in real time.
+                  </p>
+                  <div class="scroll-prompt">
+                    <div class="mouse-icon">
+                      <span class="mouse-wheel"></span>
+                    </div>
+                    <span class="scroll-prompt-text">SCROLL TO ROTATE 360°</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Phase 2: Dynamic Vortex (Frames 56 - 135) -->
+            <div class="story-phase phase-vortex" id="phase-2">
+              <div class="glass-card left-card">
+                <span class="card-tag">PHASE 01 // HYDRO-CENTRIFUGE</span>
+                <h2 class="card-title">PURE DAIRY ORBIT</h2>
+                <p class="card-desc">
+                  Micro-carbonation bursts through silken dairy waves. High-speed fluid mechanics unlock suspended rose essence droplets in zero gravity.
+                </p>
+                <div class="card-stats">
+                  <div class="stat-item">
+                    <span class="stat-num">360°</span>
+                    <span class="stat-label">Fluid Orbit</span>
+                  </div>
+                  <div class="stat-separator"></div>
+                  <div class="stat-item">
+                    <span class="stat-num">72<small>mg</small></span>
+                    <span class="stat-label">Vital Caffeine</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Phase 3: The Velvet Fusion (Frames 136 - 215) -->
+            <div class="story-phase phase-fusion" id="phase-3">
+              <div class="glass-card right-card">
+                <span class="card-tag">PHASE 02 // SENSORY PROFILE</span>
+                <h2 class="card-title">SILKEN ROSE FUSION</h2>
+                <p class="card-desc">
+                  An unforgettable harmony: electrifying caffeine kicks the senses awake while sweet Damask rose petals provide an ultra-smooth, refreshing dairy glide.
+                </p>
+                <div class="pill-tags">
+                  <span class="pill-tech">100% DAMASK EXTRACT</span>
+                  <span class="pill-tech">AMUL TONED MILK</span>
+                  <span class="pill-tech">B3 • B6 • B12 COMPLEX</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Phase 4: Maximum Potency (Frames 216 - 275) -->
+            <div class="story-phase phase-potency" id="phase-4">
+              <div class="dual-stats-grid">
+                <div class="glass-mini-card">
+                  <span class="mini-icon">⚡</span>
+                  <span class="mini-val">72 MG</span>
+                  <span class="mini-lbl">Active Vitality</span>
+                </div>
+                <div class="glass-mini-card">
+                  <span class="mini-icon">🌹</span>
+                  <span class="mini-val">DAMASK</span>
+                  <span class="mini-lbl">Pure Rose Extract</span>
+                </div>
+                <div class="glass-mini-card">
+                  <span class="mini-icon">❄️</span>
+                  <span class="mini-val">4°C</span>
+                  <span class="mini-lbl">Anand Cold-Chain</span>
+                </div>
+                <div class="glass-mini-card">
+                  <span class="mini-icon">🥛</span>
+                  <span class="mini-val">PURE</span>
+                  <span class="mini-lbl">Amul Dairy Goodness</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Phase 5: Climax & Call to Action (Frames 276 - 300) -->
+            <div class="story-phase phase-climax" id="phase-5">
+              <div class="climax-card">
+                <span class="climax-badge">CAN EVOLUTION COMPLETE</span>
+                <h2 class="climax-title">THE NEW GOLD STANDARD OF REFRESHMENT.</h2>
+                <p class="climax-subtitle">
+                  Ready to experience the perfect fusion of Amul's dairy heritage and electrifying energy? Reserve your cold-chain batch today.
+                </p>
+                <div class="climax-buttons">
+                  <a href="#flavor-matrix" class="btn btn-secondary">
+                    <span>Explore Amul Flavours</span>
+                  </a>
+                  <a href="#order-section" class="btn btn-primary">
+                    <span>Order Your Cans</span>
+                    <svg class="btn-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Vertical Scroll Progress Bar Tracker -->
+          <div class="scroll-tracker-rail">
+            <div class="tracker-fill" id="tracker-fill"></div>
+            <div class="tracker-markers">
+              <span class="marker" title="Intro" style="top: 0%"></span>
+              <span class="marker" title="Orbit" style="top: 25%"></span>
+              <span class="marker" title="Velvet" style="top: 55%"></span>
+              <span class="marker" title="Potency" style="top: 80%"></span>
+              <span class="marker" title="Ready" style="top: 100%"></span>
+            </div>
+          </div>
+
+          <!-- 360° Interactive Turntable & Orbit Toolbar -->
+          <div class="hero-turntable-toolbar" id="turntable-toolbar">
+            <button type="button" id="btn-turntable-toggle" class="turntable-btn" title="Toggle Auto 360° Turntable Rotation">
+              <span class="turntable-icon">⟳</span>
+              <span id="turntable-label">AUTO 360° SPIN</span>
+            </button>
+            <button type="button" id="btn-spark-pulse" class="turntable-btn" title="Trigger Electro Energy Spark">
+              <span class="turntable-icon">⚡</span>
+              <span>PULSE ENERGY</span>
+            </button>
+            <div class="drag-hint-chip">
+              <span class="drag-hand-icon">✋</span>
+              <span>DRAG CAN TO ORBIT 360°</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================================
+         AMUL × STING AI SENSORY TASTE LAB
+         ===================================================================== -->
+    <section id="ai-lab" class="section ai-lab-section">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">NEURAL FORMULATION LAB v2.5</span>
+          <h2 class="section-title">AMUL × STING AI SENSORY LAB</h2>
+          <p class="section-desc">
+            Amul's dairy bio-chemists meet Sting's electro-kinetic engineers. Synthesize a one-of-a-kind custom Velvet Rose energy beverage tuned precisely to your mood, caffeine velocity, and dairy silkiness.
+          </p>
+        </div>
+
+        <div class="ai-lab-grid">
+          <!-- Formulation Console -->
+          <div class="ai-console-card glass-panel">
+            <div class="console-header">
+              <div class="console-title-wrap">
+                <span class="hologram-dot"></span>
+                <h3 class="console-title">SENSORY FORMULATION CONSOLE</h3>
+              </div>
+              <span class="engine-badge" id="engine-badge">NEURAL ENGINE ONLINE</span>
+            </div>
+
+            <!-- 1. Mood Selectors -->
+            <div class="form-section-block">
+              <label class="form-block-label">1. CHOOSE YOUR VIBE / STATE:</label>
+              <div class="mood-chips-grid" id="mood-chips-grid">
+                <button type="button" class="mood-chip active" data-mood="Late Night Coding Marathon">
+                  <span class="mood-icon">💻</span>
+                  <span>Late Night Coding</span>
+                </button>
+                <button type="button" class="mood-chip" data-mood="Post-Workout Beast Mode">
+                  <span class="mood-icon">⚡</span>
+                  <span>Post-Workout Rush</span>
+                </button>
+                <button type="button" class="mood-chip" data-mood="Festival Sunset Rave">
+                  <span class="mood-icon">🔥</span>
+                  <span>Sunset Festival</span>
+                </button>
+                <button type="button" class="mood-chip" data-mood="Executive Focus Sprint">
+                  <span class="mood-icon">🎯</span>
+                  <span>Executive Focus</span>
+                </button>
+                <button type="button" class="mood-chip" data-mood="Monsoon Drive Euphoria">
+                  <span class="mood-icon">🌧️</span>
+                  <span>Monsoon Velvet</span>
+                </button>
+                <button type="button" class="mood-chip" data-mood="Chilled Midnight Chill">
+                  <span class="mood-icon">🌙</span>
+                  <span>Midnight Serenade</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- 2. Sensory Dials & Sliders -->
+            <div class="form-section-block">
+              <label class="form-block-label">2. BIO-SENSORY ATTRIBUTES:</label>
+              
+              <div class="sensor-sliders-stack">
+                <!-- Caffeine slider -->
+                <div class="slider-row">
+                  <div class="slider-info">
+                    <span class="slider-name">⚡ Electro-Caffeine Kick</span>
+                    <span class="slider-val" id="val-caffeine">75% (88mg)</span>
+                  </div>
+                  <input type="range" id="input-caffeine" min="30" max="100" value="75" class="sensory-range">
+                  <div class="range-labels"><span>Smooth Awakening (50mg)</span><span>Hyper Velocity (105mg)</span></div>
+                </div>
+
+                <!-- Dairy Silkiness slider -->
+                <div class="slider-row">
+                  <div class="slider-info">
+                    <span class="slider-name">🥛 Amul Dairy Silkiness</span>
+                    <span class="slider-val" id="val-dairy">85% (Ultra-Velvet)</span>
+                  </div>
+                  <input type="range" id="input-dairy" min="30" max="100" value="85" class="sensory-range">
+                  <div class="range-labels"><span>Crisp Light Whey</span><span>Thick Anand Malai Silk</span></div>
+                </div>
+
+                <!-- Damask Rose slider -->
+                <div class="slider-row">
+                  <div class="slider-info">
+                    <span class="slider-name">🌹 Damask Rose Botanical</span>
+                    <span class="slider-val" id="val-rose">90% (Deep Floral)</span>
+                  </div>
+                  <input type="range" id="input-rose" min="20" max="100" value="90" class="sensory-range">
+                  <div class="range-labels"><span>Subtle Petal Mist</span><span>Royal Kashmiri Attar</span></div>
+                </div>
+
+                <!-- Anand Chill slider -->
+                <div class="slider-row">
+                  <div class="slider-info">
+                    <span class="slider-name">❄️ Anand Cold-Chain Temp</span>
+                    <span class="slider-val" id="val-chill">4°C (Optimal Peak)</span>
+                  </div>
+                  <input type="range" id="input-chill" min="0" max="8" value="4" class="sensory-range">
+                  <div class="range-labels"><span>0°C Sub-Zero Frost</span><span>8°C Cellar Temp</span></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 3. Carbonation Effervescence -->
+            <div class="form-section-block">
+              <label class="form-block-label">3. CARBONATION PROFILE:</label>
+              <div class="fizz-options-grid" id="fizz-options-grid">
+                <button type="button" class="fizz-chip active" data-fizz="Micro-Bubble Velvet Glide">
+                  <span>🫧 Micro-Bubble Velvet</span>
+                </button>
+                <button type="button" class="fizz-chip" data-fizz="Crisp Electric Micro-Bubbles">
+                  <span>⚡ Crisp Electric Pop</span>
+                </button>
+                <button type="button" class="fizz-chip" data-fizz="High Effervescence Rush">
+                  <span>🌋 Volcanic Fizz Surge</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- 4. Optional Custom Prompt -->
+            <div class="form-section-block">
+              <label class="form-block-label">4. SPECIAL BIOCHEMICAL REQUEST (OPTIONAL):</label>
+              <input type="text" id="ai-custom-prompt" class="form-input custom-formula-input" placeholder="e.g. Add hint of cardamom essence, Himalayan pink salt finish">
+            </div>
+
+            <!-- Synthesize Button -->
+            <button type="button" id="btn-synthesize-ai" class="btn btn-primary btn-block btn-synthesize">
+              <span class="btn-synth-icon">✦</span>
+              <span id="btn-synth-text">SYNTHESIZE FORMULA WITH AI LAB</span>
+              <span class="btn-spinner hidden" id="synth-spinner"></span>
+            </button>
+          </div>
+
+          <!-- Holographic AI Output Terminal -->
+          <div class="ai-result-card glass-panel" id="ai-result-card">
+            <div class="result-header">
+              <div class="batch-badge">
+                <span class="pulse-dot"></span>
+                <span id="ai-formula-id">BATCH: AMUL-AI-PREVIEW</span>
+              </div>
+              <span class="security-chip">GCMMF BIO-VALIDATED</span>
+            </div>
+
+            <div class="result-can-hologram">
+              <div class="hologram-glow-ring" id="hologram-glow-ring"></div>
+              <div class="ai-can-preview" id="ai-can-preview">
+                <div class="ai-can-inner">
+                  <span class="ai-can-crest">AMUL × STING</span>
+                  <span class="ai-can-variant" id="ai-can-badge-text">VELVET BLOOM</span>
+                </div>
+              </div>
+              <div class="hologram-metrics">
+                <div class="metric-pill">
+                  <span class="metric-lbl">CAFFEINE</span>
+                  <span class="metric-val" id="res-caffeine-mg">88 mg</span>
+                </div>
+                <div class="metric-pill">
+                  <span class="metric-lbl">DAIRY SILK</span>
+                  <span class="metric-val" id="res-dairy-pct">85%</span>
+                </div>
+                <div class="metric-pill">
+                  <span class="metric-lbl">SERVING</span>
+                  <span class="metric-val" id="res-chill-deg">4°C</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="result-details">
+              <h3 class="result-edition-name" id="res-edition-name">Amul × Sting HyperDrive: Neon Byte Edition</h3>
+              <p class="result-tagline" id="res-tagline">"Hyper-focused cognitive surge wrapped in velvety dairy calm."</p>
+
+              <!-- Flavor Notes Chips -->
+              <div class="result-flavor-chips" id="res-flavor-chips">
+                <span class="flavor-chip">Sun-Dried Damask Rose</span>
+                <span class="flavor-chip">Creamy Anand Toned Dairy</span>
+                <span class="flavor-chip">Electro-Caffeine Spark</span>
+                <span class="flavor-chip">Micro-Bubble Velvet Glide</span>
+              </div>
+
+              <!-- Sensory architecture -->
+              <div class="sensory-architecture-box">
+                <div class="arch-item">
+                  <span class="arch-tag">TOP NOTE</span>
+                  <p id="res-top-note">First contact unleashes an invigorating crisp electric micro-bubbles burst, carrying fragrant floral rose high notes.</p>
+                </div>
+                <div class="arch-item">
+                  <span class="arch-tag">HEART HARMONY</span>
+                  <p id="res-heart-harmony">The palate is enveloped in lush 85% Amul dairy silk, buffering acidity and creating an ultra-velvety glide.</p>
+                </div>
+                <div class="arch-item">
+                  <span class="arch-tag">VELVET FINISH</span>
+                  <p id="res-finish">Clean, sustained alertness with zero crash, accompanied by a lingering chilled 4°C floral after-bloom.</p>
+                </div>
+              </div>
+
+              <!-- Sommelier tasting review -->
+              <div class="sommelier-quote-box">
+                <div class="sommelier-header">
+                  <span class="sommelier-avatar">🎙️</span>
+                  <span class="sommelier-title">AI CHIEF SOMMELIER VERDICT</span>
+                </div>
+                <p class="sommelier-text" id="res-sommelier">"Remarkable architectural harmony. By combining Anand's homogenized milk solids with Sting's precision caffeine curve, this blend eliminates gastric acidity while sustaining focus for over 4.5 hours."</p>
+                
+                <div class="sommelier-actions">
+                  <button type="button" id="btn-play-voice" class="btn-voice-play">
+                    <span id="voice-play-icon">▶</span>
+                    <span id="voice-play-text">Hear AI Sommelier Narration</span>
+                  </button>
+                  <span class="ideal-moment-tag" id="res-ideal-moment">Late Night Coding Readiness</span>
+                </div>
+              </div>
+
+              <!-- Action button to lock in order -->
+              <div class="result-action-bar">
+                <button type="button" id="btn-lock-ai-order" class="btn btn-primary btn-block">
+                  <span>Reserve This Custom AI Formulation</span>
+                  <svg class="btn-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SENSORY MATRIX / AMUL BEVERAGE PORTFOLIO -->
+    <section id="flavor-matrix" class="section flavor-matrix-section">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">AMUL BEVERAGE CRAFTSMANSHIP</span>
+          <h2 class="section-title">THE SPECTRUM OF REFRESHMENT</h2>
+          <p class="section-desc">
+            Explore Amul's legendary dairy beverage heritage alongside the revolutionary Velvet Rose collaboration.
+          </p>
+        </div>
+
+        <div class="matrix-grid">
+          <!-- Card 1: Amul Kool Rose -->
+          <div class="matrix-card">
+            <div class="matrix-badge">AMUL HERITAGE</div>
+            <div class="matrix-can-visual rose-glow">
+              <div class="can-silhouette rose-tint"></div>
+            </div>
+            <h3 class="matrix-card-title">AMUL KOOL ROSE</h3>
+            <p class="matrix-card-desc">The timeless classic loved across India. Homogenized toned dairy milk infused with authentic fragrant rose essence.</p>
+            <div class="sensory-meters">
+              <div class="meter-row">
+                <span>Dairy Purity</span>
+                <div class="meter-bar"><div class="fill" style="width: 100%"></div></div>
+              </div>
+              <div class="meter-row">
+                <span>Floral Rose</span>
+                <div class="meter-bar"><div class="fill" style="width: 95%"></div></div>
+              </div>
+              <div class="meter-row">
+                <span>Smoothness</span>
+                <div class="meter-bar"><div class="fill" style="width: 98%"></div></div>
+              </div>
+            </div>
+            <div class="flavor-notes">Ingredients: Pure Toned Milk, Rose Essence, Cane Sugar</div>
+          </div>
+
+          <!-- Card 2: Velvet Rose (Featured Hero) -->
+          <div class="matrix-card featured-card">
+            <div class="matrix-badge featured-badge">LIMITED COLLAB ★</div>
+            <div class="matrix-can-visual rose-glow">
+              <div class="can-silhouette rose-tint"></div>
+            </div>
+            <h3 class="matrix-card-title">AMUL × STING ROSE</h3>
+            <p class="matrix-card-desc">Where Amul's silken dairy base unites with Sting's electrifying caffeine surge and wild Damask botanical petals.</p>
+            <div class="sensory-meters">
+              <div class="meter-row">
+                <span>Energy Vitality</span>
+                <div class="meter-bar"><div class="fill pink-fill" style="width: 95%"></div></div>
+              </div>
+              <div class="meter-row">
+                <span>Dairy Silk</span>
+                <div class="meter-bar"><div class="fill pink-fill" style="width: 98%"></div></div>
+              </div>
+              <div class="meter-row">
+                <span>Floral Glide</span>
+                <div class="meter-bar"><div class="fill pink-fill" style="width: 100%"></div></div>
+              </div>
+            </div>
+            <div class="flavor-notes">Notes: Damask Rose, Silken Amul Cream, Vital Caffeine, B-Vitamins</div>
+          </div>
+
+          <!-- Card 3: Amul Kool Energy / Café -->
+          <div class="matrix-card">
+            <div class="matrix-badge">DAIRY ENERGY</div>
+            <div class="matrix-can-visual gold-glow">
+              <div class="can-silhouette gold-tint"></div>
+            </div>
+            <h3 class="matrix-card-title">AMUL KOOL CAFÉ</h3>
+            <p class="matrix-card-desc">Slow-roasted coffee beans harmonized with thick chilled Amul milk for natural focus and long-lasting sustained stamina.</p>
+            <div class="sensory-meters">
+              <div class="meter-row">
+                <span>Natural Focus</span>
+                <div class="meter-bar"><div class="fill gold-fill" style="width: 90%"></div></div>
+              </div>
+              <div class="meter-row">
+                <span>Roast Coffee</span>
+                <div class="meter-bar"><div class="fill gold-fill" style="width: 94%"></div></div>
+              </div>
+              <div class="meter-row">
+                <span>Dairy Cream</span>
+                <div class="meter-bar"><div class="fill gold-fill" style="width: 92%"></div></div>
+              </div>
+            </div>
+            <div class="flavor-notes">Ingredients: Toned Milk, Premium Roasted Coffee, Natural Dairy Solids</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- NUTRITION & TECHNICAL BLUEPRINT -->
+    <section id="specs-section" class="section specs-section">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">PURE DAIRY STANDARDS</span>
+          <h2 class="section-title">THE SENSORY BLUEPRINT</h2>
+          <p class="section-desc">
+            Engineered with Amul's gold standard dairy parameters to provide clean, crash-free revitalizing performance.
+          </p>
+        </div>
+
+        <div class="specs-grid">
+          <div class="spec-card">
+            <div class="spec-number">72<small>mg</small></div>
+            <div class="spec-title">Natural Caffeine Matrix</div>
+            <p class="spec-desc">Optimally balanced with milk proteins to trigger immediate alertness without acidity or nervous jitters.</p>
+          </div>
+          
+          <div class="spec-card">
+            <div class="spec-number">100<small>%</small></div>
+            <div class="spec-title">Amul Milk Harmonization</div>
+            <p class="spec-desc">Chilled dairy base softens stomach acidity and provides an indulgent velvet mouthfeel.</p>
+          </div>
+
+          <div class="spec-card">
+            <div class="spec-number">B3•B6•B12</div>
+            <div class="spec-title">Essential B-Vitamins</div>
+            <p class="spec-desc">Key micronutrients that support cellular metabolism, mental clarity, and athletic endurance.</p>
+          </div>
+
+          <div class="spec-card">
+            <div class="spec-number">120<small>ml</small></div>
+            <div class="spec-title">Aero Aluminum Can</div>
+            <p class="spec-desc">Precision engineered for rapid chilling to 4°C with zero environmental compromise and 100% recyclable lifecycle.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- AMUL HERITAGE & COOPERATIVE TRUST SECTION -->
+    <section id="dairy-heritage" class="section dairy-heritage-section">
+      <div class="container">
+        <div class="heritage-card">
+          <div class="heritage-header text-center">
+            <div class="pill-badge">
+              <span class="sparkle">★</span> THE TASTE OF INDIA
+            </div>
+            <h2 class="section-title">OWNED BY 3.6 MILLION FARMERS</h2>
+            <p class="section-desc">
+              Born in Anand, Gujarat under the leadership of Tribhuvandas Patel and Dr. Verghese Kurien, Amul transformed India into the world’s largest milk producer. Every product reflects the pure cooperative spirit of Indian dairy farmers.
+            </p>
+          </div>
+
+          <div class="heritage-grid">
+            <div class="heritage-item">
+              <div class="heritage-icon">🌱</div>
+              <h3 class="heritage-item-title">100% Pure Milk Guarantee</h3>
+              <p class="heritage-item-desc">Sourced directly from member cooperative societies with zero adulteration, tested across 24 rigorous purity parameters.</p>
+            </div>
+
+            <div class="heritage-item">
+              <div class="heritage-icon">❄️</div>
+              <h3 class="heritage-item-title">Anand Cold-Chain (4°C)</h3>
+              <p class="heritage-item-desc">Temperature-controlled storage from modern dairy plants in Gujarat ensures peak dairy freshness in every sip.</p>
+            </div>
+
+            <div class="heritage-item">
+              <div class="heritage-icon">🤝</div>
+              <h3 class="heritage-item-title">Farmer Empowerment</h3>
+              <p class="heritage-item-desc">Over 80% of consumer expenditure is returned directly to rural milk producer families across 18,600 village societies.</p>
+            </div>
+
+            <div class="heritage-item">
+              <div class="heritage-icon">🛡️</div>
+              <h3 class="heritage-item-title">Certified 100% Vegetarian</h3>
+              <p class="heritage-item-desc">FSSAI Central License compliant with authentic Green Dot vegetarian certification trusted by over 1.4 billion Indians.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================================
+         ANAND DAIRY 4°C LIVE COLD-CHAIN IOT TELEMETRY HUB
+         ===================================================================== -->
+    <section id="coldchain-live" class="section coldchain-section">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">ANAND DAIRY COMPLEX • IOT TELEMETRY</span>
+          <h2 class="section-title">LIVE COLD-CHAIN COMMAND HUB</h2>
+          <p class="section-desc">
+            Direct real-time telemetry stream from Amul Dairy Plant #4 in Anand, Gujarat. Ensuring every can of Amul × Sting maintains rigid 4°C integrity from vat homogenization to your doorstep.
+          </p>
+        </div>
+
+        <div class="telemetry-dashboard glass-panel">
+          <div class="telemetry-top-bar">
+            <div class="telemetry-status-indicator">
+              <span class="status-pulse green-pulse"></span>
+              <span class="hub-status-txt">GCMMF SATELLITE FEED ONLINE</span>
+            </div>
+            <div class="telemetry-meta">
+              <span id="telemetry-facility">Facility: Amul Anand Complex, Gujarat</span>
+              <span class="dot-separator">•</span>
+              <span id="telemetry-license">FSSAI: 10012021000071</span>
+              <span class="dot-separator">•</span>
+              <span id="telemetry-ping" class="ping-pill">32ms Latency</span>
+            </div>
+          </div>
+
+          <div class="telemetry-gauges-grid">
+            <div class="telemetry-card">
+              <div class="gauge-header">
+                <span class="gauge-icon">❄️</span>
+                <span class="gauge-label">VAT TEMPERATURE</span>
+              </div>
+              <div class="gauge-val-wrap">
+                <span class="gauge-number" id="telem-vat-temp">3.82 °C</span>
+                <span class="gauge-sub optimal-badge" id="telem-vat-status">OPTIMAL FRESHNESS</span>
+              </div>
+              <div class="gauge-footer">Target: 4.00°C Max • Anand Cold-Storage</div>
+            </div>
+
+            <div class="telemetry-card">
+              <div class="gauge-header">
+                <span class="gauge-icon">🧪</span>
+                <span class="gauge-label">MICRO-CARBONATION</span>
+              </div>
+              <div class="gauge-val-wrap">
+                <span class="gauge-number" id="telem-pressure">42.1 PSI</span>
+                <span class="gauge-sub text-pink">NITROGEN SEAL: 99.94%</span>
+              </div>
+              <div class="gauge-footer">Aero Aluminum Can Sealed • Zero Leakage</div>
+            </div>
+
+            <div class="telemetry-card">
+              <div class="gauge-header">
+                <span class="gauge-icon">🥛</span>
+                <span class="gauge-label">STANDARDIZED FAT</span>
+              </div>
+              <div class="gauge-val-wrap">
+                <span class="gauge-number" id="telem-fat">3.15%</span>
+                <span class="gauge-sub text-gold">100% AMUL TONED</span>
+              </div>
+              <div class="gauge-footer">Double-Tested GCMMF Cooperative Quality</div>
+            </div>
+
+            <div class="telemetry-card">
+              <div class="gauge-header">
+                <span class="gauge-icon">🚛</span>
+                <span class="gauge-label">REEFER LOGISTICS</span>
+              </div>
+              <div class="gauge-val-wrap">
+                <span class="gauge-number" id="telem-trucks">148 FLEET</span>
+                <span class="gauge-sub text-green">EXPRESS DISPATCH</span>
+              </div>
+              <div class="gauge-footer">GPS Insulated Trucks Active Across India</div>
+            </div>
+          </div>
+
+          <!-- Live Dispatch Ticker -->
+          <div class="telemetry-dispatch-strip">
+            <span class="dispatch-badge">LIVE DISPATCH FEED</span>
+            <div class="dispatch-ticker-container">
+              <div class="dispatch-ticker-content" id="dispatch-ticker-text">
+                🚚 Batch AML-STG-5706 dispatched to Mumbai Cold-Hub • ❄️ Batch AML-STG-5707 dispatched to Bengaluru Tech-Corridor • ⚡ Order AMUL-STG-849102 confirmed in Delhi NCR • 🌹 Batch AML-STG-5708 in Ahmedabad Transit
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ORDER / PRE-ORDER CHECKOUT SECTION -->
+    <section id="order-section" class="section order-section">
+      <div class="container">
+        <div class="order-container-card">
+          <div class="order-left">
+            <div class="badge-mini">ANAND COLD-CHAIN DISPATCH</div>
+            <h2 class="order-headline">CLAIM YOUR VELVET ENERGY CRUSH</h2>
+            <p class="order-subtext">
+              Freshly packaged at Amul Anand dairy facilities in partnership with Sting. Guaranteed 4°C cold-chain express dispatch to your doorstep.
+            </p>
+
+            <!-- Custom AI Selected Recipe Banner (Dynamic) -->
+            <div class="ai-order-banner hidden" id="ai-order-banner">
+              <div class="ai-banner-left">
+                <span class="sparkle">✦</span>
+                <div>
+                  <div class="ai-banner-title">CUSTOM AI FORMULA ATTACHED:</div>
+                  <div class="ai-banner-name" id="ai-banner-edition-name">Amul × Sting HyperDrive: Neon Byte Edition</div>
+                </div>
+              </div>
+              <button type="button" id="btn-remove-ai-blend" class="btn-remove-blend" title="Reset to standard Velvet Rose">✕ Standard Blend</button>
+            </div>
+
+            <!-- Pack selector -->
+            <div class="pack-selector-label">SELECT PACK SIZE:</div>
+            <div class="pack-grid">
+              <div class="pack-card active" data-pack="single" data-price="20" data-name="Single 120ml Can">
+                <div class="pack-badge">SAMPLER</div>
+                <div class="pack-qty">1 Can</div>
+                <div class="pack-price">₹20</div>
+                <div class="pack-note">120ml Trial Can</div>
+              </div>
+
+              <div class="pack-card" data-pack="six" data-price="110" data-name="Collector's 6-Pack Box">
+                <div class="pack-badge popular">MOST POPULAR</div>
+                <div class="pack-qty">6-Pack Box</div>
+                <div class="pack-price">₹110</div>
+                <div class="pack-note">Save ₹10 + Sticker Pack</div>
+              </div>
+
+              <div class="pack-card" data-pack="vault" data-price="399" data-name="Limited Vault Box (24 Cans)">
+                <div class="pack-badge vip">VIP COLLECTOR</div>
+                <div class="pack-qty">24 Cans Vault</div>
+                <div class="pack-price">₹399</div>
+                <div class="pack-note">Free Cold-Chain Shipping</div>
+              </div>
+            </div>
+
+            <!-- Perks list -->
+            <ul class="perks-list">
+              <li><span class="perk-check">✓</span> 100% Pure Amul Toned Milk & Damask Rose Extract</li>
+              <li><span class="perk-check">✓</span> 4°C Chilled Temperature Insulated Delivery</li>
+              <li><span class="perk-check">✓</span> Official Amul × Sting Authenticity Hologram</li>
+              <li><span class="perk-check">✓</span> 100% Pure Vegetarian (Green Dot Certified)</li>
+            </ul>
+          </div>
+
+          <!-- Order Summary Card -->
+          <div class="order-right">
+            <div class="summary-box">
+              <h3 class="summary-title">ORDER SUMMARY</h3>
+              
+              <div class="summary-item">
+                <span id="selected-pack-name">Single 120ml Can</span>
+                <span id="selected-pack-price">₹20</span>
+              </div>
+
+              <div class="summary-item">
+                <span>Amul Cold-Chain Logistics</span>
+                <span class="free-tag">FREE</span>
+              </div>
+
+              <div class="summary-item">
+                <span>GST & Dairy Taxes (Included)</span>
+                <span>₹0.00</span>
+              </div>
+
+              <div class="summary-divider"></div>
+
+              <div class="summary-total">
+                <span>Total Amount:</span>
+                <span id="total-price-display" class="total-price">₹20</span>
+              </div>
+
+              <!-- Instant Order Form -->
+              <form id="order-form" class="order-form" onsubmit="return false;">
+                <div class="form-group">
+                  <input type="text" id="cust-name" placeholder="Full Name" required class="form-input">
+                </div>
+                <div class="form-group">
+                  <input type="text" id="cust-address" placeholder="Delivery Pin Code & City" required class="form-input">
+                </div>
+                <button type="submit" id="btn-place-order" class="btn btn-primary btn-block btn-lg">
+                  <span>Confirm Pre-Order</span>
+                  <svg class="btn-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </button>
+              </form>
+              
+              <div class="security-badge">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="shield-icon"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                <span>Encrypted 256-bit Checkout • Cash on Delivery & UPI Supported</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Celebratory Order Success Modal -->
+  <dialog id="order-modal" class="order-modal">
+    <div class="modal-card">
+      <div class="modal-icon-burst">🎉</div>
+      <h2 class="modal-title">ORDER DISPATCH CONFIRMED!</h2>
+      <p class="modal-desc" id="modal-desc-text">
+        Congratulations! Your Amul × Sting Rose Energy shipment has been reserved.
+      </p>
+      <div class="modal-receipt" id="modal-receipt-content">
+        <!-- Injected via JS -->
+      </div>
+      <button id="modal-close-btn" class="btn btn-primary btn-block">
+        <span>Back to Experience</span>
+      </button>
+    </div>
+  </dialog>
+
+  <!-- Modern Luxury Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-brand">
+        <div class="brand-crest">
+          <span class="amul-tag">AMUL</span>
+          <span class="cross">×</span>
+          <span class="sting-tag">STING</span>
+        </div>
+        <p class="footer-tagline">
+          <strong>The Taste of India</strong> meets Electrifying Vitality. Concept showcase crafted for Amul Dairy innovation.
+        </p>
+        <div class="footer-veg-notice">
+          <span class="veg-symbol"><span class="veg-dot"></span></span>
+          <span>100% Pure Vegetarian Dairy Product</span>
+        </div>
+      </div>
+
+      <div class="footer-links-group">
+        <span class="footer-heading">NAVIGATION</span>
+        <a href="#scroll-experience">3D Scroll Journey</a>
+        <a href="#flavor-matrix">Amul Flavours</a>
+        <a href="#specs-section">Nutritional Blueprint</a>
+        <a href="#dairy-heritage">Cooperative Heritage</a>
+      </div>
+
+      <div class="footer-links-group">
+        <span class="footer-heading">AMUL OFFICIAL</span>
+        <a href="https://amul.com" target="_blank" rel="noopener">Amul Corporate (amul.com)</a>
+        <a href="https://shop.amul.com" target="_blank" rel="noopener">Amul Online Store (shop.amul.com)</a>
+        <a href="https://amul.com/m/about-us" target="_blank" rel="noopener">About GCMMF Cooperative</a>
+        <a href="tel:18002583333">Toll Free: 1800 258 3333</a>
+      </div>
+
+      <div class="footer-links-group">
+        <span class="footer-heading">COOPERATIVE OFFICE</span>
+        <p class="footer-address">
+          Gujarat Co-operative Milk Marketing Federation Ltd. (GCMMF)<br>
+          Amul Dairy Road, Anand - 388001, Gujarat, India.<br>
+          FSSAI Lic. No: 10012021000071
+        </p>
+      </div>
+    </div>
+    <div class="footer-bottom text-center">
+      <p>© 2026 GUJARAT CO-OPERATIVE MILK MARKETING FEDERATION LTD. (AMUL) × STING. ALL RIGHTS RESERVED.</p>
+    </div>
+  </footer>
+
+  <!-- =====================================================================
+       FLOATING SIDE ORDERS TRIGGER TAB (Always accessible on right side)
+       ===================================================================== -->
+  <aside class="floating-side-orders-trigger" id="floating-side-orders-trigger">
+    <button type="button" id="btn-open-orders-side" class="side-orders-btn" title="Open Real-Time Cold-Chain Order Ledger">
+      <span class="side-orders-pulse"></span>
+      <span class="side-orders-icon">📦</span>
+      <span class="side-orders-txt">ORDERS</span>
+      <span class="side-orders-badge" id="side-orders-badge">3</span>
+    </button>
+  </aside>
+
+  <!-- =====================================================================
+       REAL-TIME ORDERS & COLD-CHAIN DISPATCH DRAWER (Slide-out panel)
+       ===================================================================== -->
+  <div id="orders-drawer-backdrop" class="orders-drawer-backdrop"></div>
+  <aside id="orders-drawer" class="orders-drawer" aria-label="GCMMF Orders Ledger" aria-hidden="true">
+    <div class="drawer-header">
+      <div class="drawer-title-group">
+        <div class="drawer-badge-mini">
+          <span class="sparkle">✦</span> GCMMF ANAND LOGISTICS
+        </div>
+        <h2 class="drawer-title">COLD-CHAIN DISPATCH LEDGER</h2>
+        <p class="drawer-sub">Live authenticated order queue from Gujarat Central Dairy Plant #4</p>
+      </div>
+      <button type="button" id="btn-close-orders-drawer" class="drawer-close-btn" title="Close Drawer" aria-label="Close">✕</button>
+    </div>
+
+    <!-- Quick Ledger Stats -->
+    <div class="drawer-stats-strip">
+      <div class="drawer-stat-item">
+        <span class="dstat-num" id="drawer-total-count">3</span>
+        <span class="dstat-label">Active Allocations</span>
+      </div>
+      <div class="drawer-stat-item">
+        <span class="dstat-num text-pink" id="drawer-total-revenue">₹529</span>
+        <span class="dstat-label">Gross Value</span>
+      </div>
+      <div class="drawer-stat-item">
+        <span class="dstat-num text-green">3.8°C</span>
+        <span class="dstat-label">Cold-Chain Verified</span>
+      </div>
+    </div>
+
+    <!-- Filter chips & Refresh sync -->
+    <div class="drawer-action-bar">
+      <div class="drawer-filter-chips">
+        <button type="button" class="drawer-filter-chip active" data-filter="all">All Orders</button>
+        <button type="button" class="drawer-filter-chip" data-filter="transit">In Transit (4°C)</button>
+        <button type="button" class="drawer-filter-chip" data-filter="ai">AI Blends</button>
+      </div>
+      <button type="button" id="btn-refresh-orders" class="drawer-refresh-btn" title="Refresh Live Orders from Server">⟳ Sync</button>
+    </div>
+
+    <!-- Scrollable Orders List Container -->
+    <div class="drawer-orders-list" id="drawer-orders-list">
+      <!-- Dynamically rendered via JS -->
+    </div>
+
+    <!-- Drawer Footer -->
+    <div class="drawer-footer">
+      <a href="#order-section" id="btn-drawer-new-order" class="btn btn-primary btn-block">
+        <span>+ Place New Cold-Chain Order</span>
+        <svg class="btn-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+      <div class="drawer-legal-note">
+        <span class="veg-symbol"><span class="veg-dot"></span></span>
+        <span>GCMMF Anand Cooperative Network • 100% Pure Vegetarian</span>
+      </div>
+    </div>
+  </aside>
+
+  <script type="module" src="./main.js"></script>
+</body>
+</html>

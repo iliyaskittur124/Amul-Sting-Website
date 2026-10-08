@@ -1,0 +1,60 @@
+[
+  {
+    "id": "AMUL-AI-001",
+    "name": "Neon Damask Overdrive",
+    "mood": "Late Night Coding Marathon",
+    "caffeine": 85,
+    "dairy": 70,
+    "rose": 90,
+    "chill": 2,
+    "carbonation": "High Fizz",
+    "tagline": "Hyper-focused cognitive surge wrapped in velvety dairy calm.",
+    "flavorNotes": [
+      "Crisp Pink Petals",
+      "Silken Milk Foam",
+      "Citrus Zing",
+      "Electrifying Taurine Kick"
+    ],
+    "caffeineMg": 88,
+    "colorGlow": "#ff2d87",
+    "createdAt": "2026-10-08T17:14:28.703Z"
+  },
+  {
+    "id": "AMUL-AI-002",
+    "name": "Himalayan Silk Recharge",
+    "mood": "Post-Workout Beast Mode",
+    "caffeine": 72,
+    "dairy": 95,
+    "rose": 60,
+    "chill": 3,
+    "carbonation": "Velvet Smooth",
+    "tagline": "High-protein milk emulsion engineered for instant glycogen replenishment.",
+    "flavorNotes": [
+      "Creamy Anand Toned Milk",
+      "Wild Mountain Rose",
+      "Electrolyte Saline Finish"
+    ],
+    "caffeineMg": 75,
+    "colorGlow": "#ffbe3b",
+    "createdAt": "2026-10-08T16:50:28.705Z"
+  },
+  {
+    "id": "AMUL-AI-003",
+    "name": "Monsoon Velvet Euphoria",
+    "mood": "Chilled Sunset Vibe",
+    "caffeine": 55,
+    "dairy": 85,
+    "rose": 100,
+    "chill": 4,
+    "carbonation": "Micro-Bubbles",
+    "tagline": "A luxurious floral meditation with a subtle awakening spark.",
+    "flavorNotes": [
+      "Double-Distilled Damask Attar",
+      "Sweet Condensed Dairy Silk",
+      "Cardamom Mist"
+    ],
+    "caffeineMg": 60,
+    "colorGlow": "#ff4071",
+    "createdAt": "2026-10-08T15:57:28.705Z"
+  }
+]
